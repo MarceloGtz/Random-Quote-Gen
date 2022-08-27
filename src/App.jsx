@@ -4,32 +4,29 @@ import quotes from './quotes.json';
 
 function App() {
   let quotesClean = quotes.quotes;
-  let colors = ['#252A34', '#08D9D6', '#FF2E63'];
+  let classNames = ['blue', 'red', 'green'];
 
   let randomNumber = Math.floor(Math.random() * quotesClean.length);
-  let randomColor = Math.floor(Math.random() * colors.length);
+  let randomClassName = Math.floor(Math.random() * classNames.length);
   const [index, setIndex] = useState(randomNumber);
-  const [color, setColor] = useState(colors[randomColor]);
+  const [className, setClassName] = useState(classNames[randomClassName]);
 
   return (
-    <div className='App' style={{ background: color }}>
+    //
+    <div className={`${className} App`}>
       <main className='card'>
-        <i
-          style={{ color: color }}
-          className='card__quote fa-solid fa-quote-left'
-        ></i>
+        <i className='card__quote fa-solid fa-quote-left'></i>
         <div className='card__text'>
-          <p style={{ color: color }}>{quotesClean[index].quote}</p>
-          <h3 className='card__text-author' style={{ color: color }}>
-            - {quotesClean[index].author}
-          </h3>
+          <p>{quotesClean[index].quote}</p>
+          <h3 className='card__text-author'>- {quotesClean[index].author}</h3>
         </div>
         <button
-          style={{ background: color }}
           className='card__button'
           onClick={() => {
             setIndex(Math.floor(Math.random() * quotesClean.length));
-            setColor(colors[Math.floor(Math.random() * colors.length)]);
+            setClassName(
+              classNames[Math.floor(Math.random() * classNames.length)]
+            );
           }}
         >
           <i className='card__button-icon fa-solid fa-shuffle'></i>
