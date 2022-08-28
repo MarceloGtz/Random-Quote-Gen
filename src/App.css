@@ -5,7 +5,7 @@ body {
 }
 
 .App {
-  font-family: 'Arvo', serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,12 +17,16 @@ body {
     -45deg,
     white 0,
     white 20%,
-    #08d9d6 0,
-    #08d9d6 80%,
+    #06c5c2 0,
+    #06c5c2 80%,
     white 0,
     white
   );
-  color: #08d9d6;
+  color: #06c5c2;
+}
+
+.blue .card__button {
+  background-color: #06c5c2;
 }
 
 .red {
@@ -38,6 +42,10 @@ body {
   color: #ff2e63;
 }
 
+.red .card__button {
+  background-color: #ff2e63;
+}
+
 .green {
   background: repeating-linear-gradient(
     -45deg,
@@ -51,6 +59,10 @@ body {
   color: #08d95f;
 }
 
+.green .card__button {
+  background-color: #08d95f;
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -61,10 +73,16 @@ body {
   min-width: 320px;
   height: fit-content;
   width: 540px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   position: relative;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid gainsboro;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.25);
+  transition: all 350ms ease-out;
+}
+
+.card:hover {
+  box-shadow: 0 1rem 3rem 0px rgba(0, 0, 0, 0.65);
 }
 
 .card__quote {
@@ -84,20 +102,26 @@ body {
   font-size: 1.6rem;
   text-align: right;
   margin: 0;
+  font-style: italic;
 }
 
 .card__button {
   border: none;
   border-radius: 50%;
-  padding: 0.9rem;
+  padding: 1rem;
   font-size: 1rem;
   color: #eaeaea;
   background-color: #212121;
   cursor: pointer;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__button-icon {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }

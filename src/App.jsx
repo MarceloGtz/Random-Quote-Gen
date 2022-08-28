@@ -14,11 +14,11 @@ function App() {
   return (
     //
     <div className={`${className} App`}>
-      <main className='card'>
+      <main className='card shadow-drop-2-center'>
         <i className='card__quote fa-solid fa-quote-left'></i>
         <div className='card__text'>
           <p>{quotesClean[index].quote}</p>
-          <h3 className='card__text-author'>- {quotesClean[index].author}</h3>
+          <h3 className='card__text-author'>~ {quotesClean[index].author}</h3>
         </div>
         <button
           className='card__button'
@@ -29,7 +29,7 @@ function App() {
             );
           }}
         >
-          <i className='card__button-icon fa-solid fa-shuffle'></i>
+          <i class='card__button-icon fa-solid fa-quote-right'></i>
         </button>
       </main>
     </div>
