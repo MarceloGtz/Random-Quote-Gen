@@ -12,13 +12,30 @@ Check out my app running on netlify here: https://spectacular-medovik-d7b0f4.net
 - Dinamic Background
 - Dinamic Quote
 
-## Deployment
+## Run Locally
 
-To deploy this project run
+Clone the project
 
 ```bash
-    npm install
-    npm run dev
+  git clone https://github.com/MarceloGtz/Random-Quote-Gen.git
+```
+
+Go to the project directory
+
+```bash
+  cd Random-Quote-Gen
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
 ```
 
 ## Tech Stack
