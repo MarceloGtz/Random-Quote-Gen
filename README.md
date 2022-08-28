@@ -1,6 +1,6 @@
 # Random Quote Generator
 
-Created using the [Pokéapi](https://pokeapi.co/), thanks!.
+Created using the [Pokéapi](https://pokeapi.co/), thanks!.  
 Check out my app running on netlify here: https://spectacular-medovik-d7b0f4.netlify.app/.
 
 ## Screenshots
