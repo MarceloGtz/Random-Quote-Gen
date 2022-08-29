@@ -20,7 +20,7 @@ export const QuoteBox = () => {
       <main className='card shadow-drop-2-center'>
         <i className='card__quote fa-solid fa-quote-left'></i>
         <div className='card__text'>
-          <p>{`" ${quotesClean[index].quote} "`}</p>
+          <p>{`"${quotesClean[index].quote}"`}</p>
           <h3 className='card__text-author'>~ {quotesClean[index].author}</h3>
         </div>
         <button

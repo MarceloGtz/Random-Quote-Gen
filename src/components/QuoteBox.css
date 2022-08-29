@@ -62,7 +62,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #eaeaea;
+  background-color: white;
   gap: 2rem;
   min-width: 320px;
   height: fit-content;
@@ -71,13 +71,13 @@
   padding: 1rem;
   border-radius: 1.5rem;
   border: 1px solid gainsboro;
-  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.3);
   transition: all 350ms ease-out;
   min-height: 320px;
 }
 
 .card:hover {
-  box-shadow: 0 1rem 3rem 0px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.7);
 }
 
 .card__quote {
@@ -105,7 +105,7 @@
   border-radius: 50%;
   padding: 1rem;
   font-size: 1rem;
-  color: #eaeaea;
+  color: white;
   background-color: #212121;
   cursor: pointer;
   width: 50px;
@@ -118,4 +118,127 @@
 
 .card__button-icon {
   font-size: 1.15rem;
+}
+
+@media only screen and (max-width: 630px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    gap: 2rem;
+    min-width: 320px;
+    position: relative;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid gainsboro;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.25);
+    transition: all 350ms ease-out;
+    min-height: 220px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card__quote {
+    top: 10px;
+    left: 15px;
+    font-size: 2rem;
+    align-self: flex-start;
+  }
+
+  .card__text p {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card__text-author {
+    font-size: 1.2rem;
+    text-align: right;
+    margin-top: 1rem;
+    font-style: italic;
+  }
+
+  .card__button {
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #212121;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .card__button-icon {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    gap: 2rem;
+    min-width: 320px;
+    position: relative;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid gainsboro;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.25);
+    transition: all 350ms ease-out;
+    min-height: 220px;
+    min-width: 45%;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .card__quote {
+    top: 10px;
+    left: 15px;
+    font-size: 2rem;
+    align-self: flex-start;
+  }
+
+  .card__text p {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card__text-author {
+    font-size: 1.1rem;
+    text-align: right;
+    margin-top: 1rem;
+    font-style: italic;
+  }
+
+  .card__button {
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 0.3rem;
+    color: white;
+    background-color: #212121;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .card__button-icon {
+    font-size: 1.15rem;
+  }
 }
