@@ -1,0 +1,121 @@
+.App {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  background: repeating-linear-gradient(
+    -45deg,
+    white 0,
+    white 20%,
+    #06c5c2 0,
+    #06c5c2 80%,
+    white 0,
+    white
+  );
+  color: #06c5c2;
+}
+
+.blue .card__button {
+  background-color: #06c5c2;
+}
+
+.red {
+  background: repeating-linear-gradient(
+    -45deg,
+    white 0,
+    white 20%,
+    #ff2e63 0,
+    #ff2e63 80%,
+    white 0,
+    white
+  );
+  color: #ff2e63;
+}
+
+.red .card__button {
+  background-color: #ff2e63;
+}
+
+.green {
+  background: repeating-linear-gradient(
+    -45deg,
+    white 0,
+    white 20%,
+    #08d95f 0,
+    #08d95f 80%,
+    white 0,
+    white
+  );
+  color: #08d95f;
+}
+
+.green .card__button {
+  background-color: #08d95f;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eaeaea;
+  gap: 2rem;
+  min-width: 320px;
+  height: fit-content;
+  width: 540px;
+  position: relative;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid gainsboro;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.25);
+  transition: all 350ms ease-out;
+  min-height: 320px;
+}
+
+.card:hover {
+  box-shadow: 0 1rem 3rem 0px rgba(0, 0, 0, 0.65);
+}
+
+.card__quote {
+  top: 10px;
+  left: 15px;
+  font-size: 4rem;
+  align-self: flex-start;
+}
+
+.card__text p {
+  font-size: 1.4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.card__text-author {
+  font-size: 1.6rem;
+  text-align: right;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.card__button {
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #eaeaea;
+  background-color: #212121;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.card__button-icon {
+  font-size: 1.15rem;
+}
