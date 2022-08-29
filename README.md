@@ -1,6 +1,6 @@
 # Random Quote Generator
 
-Created using the [Pokéapi](https://pokeapi.co/), thanks!.  
+Created using the [Json Blob Quotes](https://jsonblob.com/918261686465740800), thanks!.  
 Check out my app running on netlify here: https://spectacular-medovik-d7b0f4.netlify.app/.
 
 ## Screenshots
@@ -49,4 +49,4 @@ Start the server
 ## Acknowledgements
 
 - [Readme Editor](https://readme.so/es)
-- [Pokéapi](https://pokeapi.co/)
+- [Json Blob Quotes](https://jsonblob.com/918261686465740800)
