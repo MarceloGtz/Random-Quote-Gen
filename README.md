@@ -1,7 +1,7 @@
 # Random Quote Generator
 
 Created using the [Json Blob Quotes](https://jsonblob.com/918261686465740800), thanks!.  
-Check out my app running on netlify here: https://spectacular-medovik-d7b0f4.netlify.app/.
+Check out my app running on netlify here: <a href="https://spectacular-medovik-d7b0f4.netlify.app/" target="_blank">Random-Quote-Generator.</a>
 
 ## Screenshots
 
